@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+<style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 20px;
+      border-radius: 10px;
+      background: linear-gradient(to bottom right, #ffffff, #e0e0e0);
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+  
+    h1 {
+      text-align: center;
+      font-size: 2.5em;
+      color: #cc0000;
+    }
+  
+    #description {
+      text-align: center;
+      font-style: italic;
+      margin-bottom: 30px;
+    }
+  
+    label {
+      font-weight: bold;
+    }
+  
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      margin-bottom: 20px;
+      border: 2px solid #999;
+      border-radius: 5px;
+      font-size: 1em;
+    }
+  
+    input[type="radio"],
+    input[type="checkbox"] {
+      margin-right: 10px;
+    }
+  
+    textarea {
+      resize: vertical;
+    }
+  
+    button {
+      background-color: #cc0000;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      font-size: 1.1em;
+      border-radius: 5px;
+      cursor: pointer;
+      display: block;
+      margin: 0 auto;
+      transition: background-color 0.3s ease;
+    }
+  
+    button:hover {
+      background-color: #a00000;
+    }
+  
+    p {
+      margin-top: 0;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+  </style>
+  </head>
+  
+  <body>
+  
+    <h1 id="title">Powerlifting Preference Survey 💪</h1>
+    <p id="description">Welcome, barbell warrior. This is your moment. Help us figure out how many scoops of pre-workout is too many.</p>
+  
+    <form id="survey-form">
+  
+      <!-- Name -->
+      <label id="name-label" for="name">Your Full (Gym) Name:</label><br>
+      <input id="name" type="text" placeholder="Ex: John 'The Quadfather' Smith" required><br><br>
+  
+      <!-- Email -->
+      <label id="email-label" for="email">Email (for future lifting memes):</label><br>
+      <input id="email" type="email" placeholder="you@liftmail.com" required><br><br>
+  
+      <!-- Number -->
+      <label id="number-label" for="number">How many reps of 225 can you bench?</label><br>
+      <input id="number" type="number" min="0" max="100" placeholder="Be honest... or not. 😏"><br><br>
+  
+      <!-- Dropdown -->
+      <label for="dropdown">Favorite lift of all time:</label><br>
+      <select id="dropdown">
+        <option value="squat">Squat (Ass to grass or bust)</option>
+        <option value="deadlift">Deadlift (Because picking stuff up is cool)</option>
+      </select><br><br>
+  
+      <!-- Radio Buttons -->
+      <p>Choose your lifting style:</p>
+      <label>
+        <input type="radio" name="style" value="raw" required>
+        Raw (no gear, just gains)
+      </label><br>
+      <label>
+        <input type="radio" name="style" value="equipped">
+        Equipped (multiply or nothing!)
+      </label><br><br>
+  
+      <!-- Checkboxes -->
+      <p>Which of these are always in your gym bag? (Check all that apply)</p>
+      <label><input type="checkbox" value="chalk"> Chalk (The messier, the better)</label><br>
+      <label><input type="checkbox" value="belt"> Lifting Belt (Because your spine matters)</label><br>
+      <label><input type="checkbox" value="knee-sleeves"> Knee Sleeves (Stylish and supportive)</label><br>
+      <label><input type="checkbox" value="ammonia"> Ammonia Smelling Salts (Pre-death sniff)</label><br><br>
+  
+      <!-- Textarea -->
+      <label for="comments">Other Comments? (Tell us your PR or confess your gym sins):</label><br>
+      <textarea id="comments" name="comments" rows="5" cols="40" placeholder="Once hit a PR while sneezing mid-rep..."></textarea><br><br>
+  
+      <!-- Submit -->
+      <button type="submit" id="submit">Submit Gains 💥</button>
+  
+    </form>
+  
+  </body>
+</html>
